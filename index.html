@@ -28,12 +28,12 @@
     #felt div:nth-child(odd) {
       margin-top: 1px;
       margin-left: 2px;
-      transform: rotate(1deg);
+      transform: rotate(0deg);
     }
     #felt div:nth-child(3n) {
-      margin-top: -2px;
-      margin-left: -1px;
-      transform: rotate(1deg);
+      margin-top: 1px;
+      margin-left: 2px;
+      transform: rotate(0deg);
     }
     </style>
 </head>
@@ -159,7 +159,7 @@
       var newCard = card.cloneNode(true);
 
       newCard.fromtop = 45 + 120 * Math.floor(i/4);
-      newCard.fromleft = 70 + 180 * (i%4);
+      newCard.fromleft = 30 + 180 * (i%4);
       (function(idx) {
         newCard.addEventListener("click", function() { cardClick(idx); }, false);
       })(i);
